@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>To do Firebase</title>
+</head>
+<body>
+  <div class="">
+      <h1>Users</h1>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-8">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Age</th>
+                </tr>
+              </thead>
+              <tbody id="container">
+                
+              </tbody>
+            </table>
+          </div>
+          <div class="col-12 col-lg-4" >
+              
+              <form>
+                <h2>Add User</h2>
+                <p>name:</p>
+                <input id="name-user" type='text' data-key='name' class='form-control'><br>
+                age:<br>
+                <input id="age-user" type='text' data-key='age' class='form-control'><br>
+                <p>email:</p>
+                <input id="email-user" type='text' data-key='email' class='form-control'><br>
+                <button id="adduser" type='button' class="btn btn-primary">Add user</button>
+                <button disabled="disabled" id="save" class="btn btn-info" >Guardar</button>
+             </form>
+            </div>
+    </div>
+  </div>
+
+
+  
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
